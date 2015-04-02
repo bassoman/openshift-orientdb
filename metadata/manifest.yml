@@ -29,7 +29,7 @@ Cart-Data:
   Type: cart_data
   Description: OrientDB connection URL
 Provides:
-  - orientdb-1.7.4
+  - orientdb-2.0.5
   - orientdb
 Publishes:
   publish-db-connection-info:
