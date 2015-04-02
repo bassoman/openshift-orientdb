@@ -1,5 +1,5 @@
 # Openshift OrientDB Cartridge
-Upgrading to version 2.0.5
+*** Upgrading to version 2.0.5 ***
 
 This cartridge provides [OrientDB](http://www.orientechnologies.com/orientdb/) on the Openshift Platform.
 
