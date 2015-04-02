@@ -1,6 +1,6 @@
 ---
 Name: orientdb
-Source-Url: https://github.com/jjfraz11/openshift-orientdb.git
+Source-Url: https://github.com/bassoman/openshift-orientdb.git
 Cartridge-Short-Name: ORIENTDB
 Cartridge-Version: 0.0.3
 Compatible-Versions: []
