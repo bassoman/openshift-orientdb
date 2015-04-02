@@ -2,12 +2,12 @@
 Name: orientdb
 Source-Url: https://github.com/jjfraz11/openshift-orientdb.git
 Cartridge-Short-Name: ORIENTDB
-Cartridge-Version: 0.0.2
+Cartridge-Version: 0.0.3
 Compatible-Versions: []
 Cartridge-Vendor: linkstreme
 Display-Name: OrientDB
 Description: "OrientDB is an Open Source NoSQL DBMS with the features of both Document and Graph DBMSs."
-Version: '1.7.4'
+Version: '2.0.5'
 License: GNU GENERAL PUBLIC LICENSE
 Vendor: Orient Technologies
 Website: http://www.orientechnologies.com
