@@ -1,5 +1,6 @@
 # Openshift OrientDB Cartridge
 Upgrading to version 2.0.5
+
 This cartridge provides [OrientDB](http://www.orientechnologies.com/orientdb/) on the Openshift Platform.
 
 **OrientDB** is an open source NoSQL database management system written in Java. It has features of both Document and Graph management, as it’s document-based database, but the relationships are managed as in graph databases with direct connections between records. 
