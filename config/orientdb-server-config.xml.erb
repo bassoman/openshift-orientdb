@@ -8,16 +8,16 @@
             </parameters>
         </handler>
         <!-- CLUSTER PLUGIN, TO TURN ON SET THE 'ENABLED' PARAMETER TO 'true' -->
-        <handler class="com.orientechnologies.orient.server.hazelcast.OHazelcastPlugin">
+<!--         <handler class="com.orientechnologies.orient.server.hazelcast.OHazelcastPlugin">
             <parameters>
-                <!-- <parameter name="nodeName" value="europe1" /> -->
-                <parameter name="enabled" value="${distributed}"/>
+ -->                <!-- <parameter name="nodeName" value="europe1" /> -->
+<!--                 <parameter name="enabled" value="${distributed}"/>
                 <parameter name="configuration.db.default"
                            value="${ORIENTDB_HOME}/config/default-distributed-db-config.json"/>
                 <parameter name="configuration.hazelcast" value="${ORIENTDB_HOME}/config/hazelcast.xml"/>
             </parameters>
         </handler>
-        <!-- JMX SERVER, TO TURN ON SET THE 'ENABLED' PARAMETER TO 'true' -->
+ -->        <!-- JMX SERVER, TO TURN ON SET THE 'ENABLED' PARAMETER TO 'true' -->
         <handler class="com.orientechnologies.orient.server.handler.OJMXPlugin">
             <parameters>
                 <parameter name="enabled" value="false"/>
@@ -51,18 +51,18 @@
             </parameters>
         </handler>
         <!-- USE SESSION TOKEN, TO TURN ON SET THE 'ENABLED' PARAMETER TO 'true' -->
-        <handler class="com.orientechnologies.orient.server.token.OrientTokenHandler">
+<!--         <handler class="com.orientechnologies.orient.server.token.OrientTokenHandler">
             <parameters>
                 <parameter name="enabled" value="false"/>
-                <!-- PRIVATE KEY -->
-                <parameter name="oAuth2Key" value=""/>
+ -->                <!-- PRIVATE KEY -->
+                <!-- <parameter name="oAuth2Key" value=""/> -->
                 <!-- SESSION LENGTH IN MINUTES, DEFAULT=1 HOUR -->
-                <parameter name="sessionLength" value="60"/>
+                <!-- <parameter name="sessionLength" value="60"/> -->
                 <!-- ENCRYPTION ALGORITHM, DEFAULT=HmacSHA256 -->
-                <parameter name="encryptionAlgorithm" value="HmacSHA256"/>
+<!--                 <parameter name="encryptionAlgorithm" value="HmacSHA256"/>
             </parameters>
         </handler>
-    </handlers>
+ -->    </handlers>
     <network>
         <sockets>
             <socket implementation="com.orientechnologies.orient.server.network.OServerSSLSocketFactory" name="ssl">
@@ -134,6 +134,11 @@
         <!-- DATABASE POOL: size min/max -->
         <entry name="db.pool.min" value="1"/>
         <entry name="db.pool.max" value="50"/>
+
+        <!-- LEVEL1 AND 2 CACHE: enable/disable and set the size as number of entries -->
+        <entry name="cache.level1.enabled" value="true"/>
+        <entry name="cache.level2.enabled" value="false"/>
+        <entry name="cache.level2.size" value="0"/>
 
         <!-- PROFILER: configures the profiler as <seconds-for-snapshot>,<archive-snapshot-size>,<summary-size> -->
         <entry name="profiler.enabled" value="true"/>
